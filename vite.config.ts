@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
@@ -12,7 +14,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
-import Unocss from 'unocss/vite'
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -27,6 +29,11 @@ export default defineConfig({
     Vue({
       include: [/\.vue$/, /\.md$/],
       reactivityTransform: true,
+      template: { transformAssetUrls },
+    }),
+
+    quasar({
+      autoImportComponentCase: 'kebab',
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -66,7 +73,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    Unocss(),
+    // Unocss(),
 
     // https://github.com/antfu/vite-plugin-vue-markdown
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
