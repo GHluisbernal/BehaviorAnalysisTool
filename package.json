@@ -17,7 +17,6 @@
     "@quasar/quasar-ui-qcalendar": "4.0.0-beta.15",
     "@vueuse/core": "^8.9.2",
     "@vueuse/head": "^0.7.7",
-    "nprogress": "^0.2.0",
     "pinia": "^2.0.17",
     "prism-theme-vars": "^0.2.4",
     "quasar": "^2.7.5",

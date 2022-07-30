@@ -20,7 +20,6 @@ specifiers:
   https-localhost: ^4.7.1
   markdown-it-link-attributes: ^4.0.0
   markdown-it-prism: ^2.2.4
-  nprogress: ^0.2.0
   pinia: ^2.0.17
   pnpm: ^7.5.1
   prism-theme-vars: ^0.2.4
@@ -48,7 +47,6 @@ dependencies:
   '@quasar/quasar-ui-qcalendar': 4.0.0-beta.15
   '@vueuse/core': 8.9.2_vue@3.2.37
   '@vueuse/head': 0.7.8_vue@3.2.37
-  nprogress: 0.2.0
   pinia: 2.0.17_j6bzmzd4ujpabbp5objtwxyjp4
   prism-theme-vars: 0.2.4
   quasar: 2.7.5
@@ -5309,10 +5307,6 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
-
-  /nprogress/0.2.0:
-    resolution: {integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=}
-    dev: false
 
   /nth-check/2.0.1:
     resolution: {integrity: sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==}

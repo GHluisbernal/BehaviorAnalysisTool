@@ -1,12 +1,14 @@
-import NProgress from 'nprogress'
+import { LoadingBar } from 'quasar'
 import { type UserModule } from '~/types'
 
 export const install: UserModule = ({ isClient, router }) => {
   if (isClient) {
-    router.beforeEach((to, from) => {
+    router.beforeEach(async (to, from) => {
       if (to.path !== from.path)
-        NProgress.start()
+        LoadingBar.start()
     })
-    router.afterEach(() => { NProgress.done() })
+    router.afterEach(() => {
+      LoadingBar.stop()
+    })
   }
 }
