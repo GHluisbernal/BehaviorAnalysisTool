@@ -4,6 +4,7 @@ specifiers:
   '@antfu/eslint-config': ^0.25.2
   '@intlify/vite-plugin-vue-i18n': ^5.0.1
   '@quasar/extras': ^1.15.0
+  '@quasar/quasar-ui-qcalendar': 4.0.0-beta.15
   '@quasar/vite-plugin': ^1.1.1
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
@@ -44,6 +45,7 @@ specifiers:
 
 dependencies:
   '@quasar/extras': 1.15.0
+  '@quasar/quasar-ui-qcalendar': 4.0.0-beta.15
   '@vueuse/core': 8.9.2_vue@3.2.37
   '@vueuse/head': 0.7.8_vue@3.2.37
   nprogress: 0.2.0
@@ -1572,6 +1574,10 @@ packages:
 
   /@quasar/extras/1.15.0:
     resolution: {integrity: sha512-e5IHHqo3i/u7yWdcdspBbthnrDDZ3VRXaQoyhEEy526lzITFAw3hnlt4h7YnZ6Ck6gVIM0YbCaZbKaQYfKPOzQ==}
+    dev: false
+
+  /@quasar/quasar-ui-qcalendar/4.0.0-beta.15:
+    resolution: {integrity: sha512-M0yrCb/wkTM7bU+ad1vwNS0R9pqCeWikU1K31GKl/+5PG1c8FkFMceK0AOi9ao+AIzqEvkDCh/eFZUEY53v/mg==}
     dev: false
 
   /@quasar/vite-plugin/1.1.1_kaueh5kpmqbliusp3ndwakjjxm:

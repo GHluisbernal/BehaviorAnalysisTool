@@ -8,5 +8,8 @@ export const install: UserModule = ({ app }) => {
   app.use(Quasar, {
     plugins: {},
     iconSet: quasarIconSet,
+    config: {
+      dark: usePreferredDark().value,
+    },
   })
 }

@@ -10,10 +10,10 @@ useHead({
   title: 'Vitesse todo',
   meta: [
     { name: 'description', content: 'Opinionated Vite Starter Template' },
-    // {
-    //   name: 'theme-color',
-    //   content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
-    // },
+    {
+      name: 'theme-color',
+      content: computed(() => $q.dark.isActive ? '#00aba9' : '#ffffff'),
+    },
   ],
   link: [
     {

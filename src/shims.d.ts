@@ -14,3 +14,5 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+declare module '@quasar/quasar-ui-qcalendar/src'
