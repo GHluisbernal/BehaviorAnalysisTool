@@ -53,6 +53,7 @@ export default defineConfig({
         'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
+        'quasar',
       ],
       dts: 'src/auto-imports.d.ts',
       dirs: [

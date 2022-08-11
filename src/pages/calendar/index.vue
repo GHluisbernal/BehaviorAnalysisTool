@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import { useQuasar } from 'quasar'
-
+const { locale } = useI18n()
 interface Session {
   type: string
 }
-
-const $q = useQuasar()
-const dark = ref($q.dark)
 const sessions: Map<string, Session[]> = new Map ([
   ['2022-08-05', [
     {
@@ -33,6 +29,7 @@ const getSessions = (date: string) => sessions.get(date)
       focusable
       :focus-type="['day']"
       hoverable
+      :locale="locale"
       no-active-date
       no-outside-days
     >
@@ -41,9 +38,6 @@ const getSessions = (date: string) => sessions.get(date)
           class="row"
         >
           {{ getSessions(timestamp.date) }}
-          <q-btn color="primary" @click="dark.toggle">
-            asd
-          </q-btn>
         </div>
       </template>
     </q-calendar-month>
