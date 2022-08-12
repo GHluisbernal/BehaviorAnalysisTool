@@ -1,11 +1,13 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 const leftDrawerOpen = ref(false)
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 
 // TODO
-const isAuthenticated = ref(true)
+const isAuthenticated = ref(false)
 </script>
 
 <template>
@@ -27,7 +29,7 @@ const isAuthenticated = ref(true)
         <toolbar-language-btn />
 
         <!-- TODO: Implement actual logic -->
-        <q-btn-dropdown v-if="isAuthenticated" class="q-mr-sm" aria-label="Account profile photo that open list of alternate options">
+        <q-btn-dropdown v-if="isAuthenticated" aria-label="Account profile photo that open list of alternate options">
           <template #label>
             <q-avatar size="sm">
               <img src="https://cdn.quasar.dev/img/avatar2.jpg">
@@ -40,9 +42,7 @@ const isAuthenticated = ref(true)
             <q-item v-close-popup clickable tabindex="0" />
           </q-list>
         </q-btn-dropdown>
-        <q-btn v-else class="q-mr-sm">
-          Sign In
-        </q-btn>
+        <q-btn v-else :label="t('button.sign_in')" />
       </q-toolbar>
     </q-header>
 
